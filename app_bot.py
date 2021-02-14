@@ -1,3 +1,3 @@
 from datetime import datetime
 
-print(f"app_bot : {datetime.now()}")
+print("app_bot")
