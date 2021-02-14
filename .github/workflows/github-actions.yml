@@ -6,7 +6,7 @@ on:
   schedule:
     - cron:  '*/1 * * * *'  ## min, hour, day, month, week
 
-    jobs:
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
