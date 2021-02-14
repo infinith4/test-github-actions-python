@@ -3,7 +3,10 @@ on:
   push:
     branches:
       - develop
-jobs:
+  schedule:
+    - cron:  '*/1 * * * *'  ## min, hour, day, month, week
+
+    jobs:
   build:
     runs-on: ubuntu-latest
     steps:
