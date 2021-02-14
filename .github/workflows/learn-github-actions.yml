@@ -8,7 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: | 
-          echo ${{secrets.HEROKU_API_KEY}}
+          echo "teest"
+          #echo ${{secrets.HEROKU_API_KEY}}
       - uses: actions/checkout@v2
       ## https://github.com/marketplace/actions/deploy-to-heroku
       - uses: akhileshns/heroku-deploy@v3.11.10 # This is the action
