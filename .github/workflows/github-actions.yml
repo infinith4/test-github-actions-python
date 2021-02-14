@@ -8,13 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: | 
-          echo "teest"
-          echo "${{secrets.HEROKU_API_KEY}}"
+          echo "exec app_bot"
       - uses: actions/checkout@v2
       ## https://github.com/marketplace/actions/deploy-to-heroku
       - uses: akhileshns/heroku-deploy@v3.11.10 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "testgithubactionpy0001" #Must be unique in Heroku
-          heroku_email: "th4inf@gmail.com"
+          heroku_email: ${{secrets.HEROKU_EMAIL}}
 
