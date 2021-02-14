@@ -4,7 +4,7 @@ on:
     branches:
       - develop
   schedule:
-    cron:  '*/1 * * * *'  ## min, hour, day, month, week
+    - cron:  '*/1 * * * *'  ## min, hour, day, month, week
 
     jobs:
   build:
