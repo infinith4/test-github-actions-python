@@ -20,5 +20,5 @@ jobs:
           heroku_app_name: "testgithubactionpy0001" #Must be unique in Heroku
           heroku_email: ${{secrets.HEROKU_EMAIL}}
       - run: |
-          heroku run: python app_bot.py
+          heroku run "python app_bot.py"
 
